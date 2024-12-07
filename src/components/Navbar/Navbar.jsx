@@ -30,7 +30,7 @@ export default function Navbar() {
       <nav className="bg-slate-100 fixed top-0 left-0 right-0 p-3 px-5 shadow-lg z-[999] transition-all duration-700 dark:bg-slate-800 dark:text-white">
         <div className=" container flex flex-wrap items-center justify-start">
         <Link to="/" className="w-fit">
-            <img src={dark?logo:logo2} alt="" className="w-32 active:scale-95"
+            <img src={!dark?logo:logo2} alt="" className="w-32 active:scale-95"
             onClick={() => {
               setIsOpen(false);
             }} />
